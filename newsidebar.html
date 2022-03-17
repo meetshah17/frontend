@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel='stylesheet' href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <title>Dashboard</title>
+      <link rel="stylesheet" href="newsidebar.css">
+
+  </head>
+  <body class="sidebarbody">
+    <input type="checkbox" id='check'>
+    <!--Header area starts here-->
+    <header class="sidebarhead">
+      <label for="check">
+        <i class = "fas fa-bars" id = "sidebar_btn"> </i>
+      </label>
+      <div class="logo">
+        <img src="i2.jpg" alt="">
+      </div>
+      <div class = "right_area">
+        <a href ='#' class = 'logout_btn'> Logout </a>
+      </div>
+    </header>
+    <!--header area ends here-->
+    <!--side-bar starts here-->
+    <div class = "sidebar">
+      <div class = "profile">
+        <img src="img_avatar.jpg" class = "profile_image" alt="">
+        <h4 class="uname"> User Name</h4>
+      </div>    
+      <a href="#"><i class="fas fa-desktop"></i><span> Dashboard </span></a>
+      <a href="#"><i class="fas fa-table"></i><span> Tables </span></a>
+      <div class="line" id="hide">
+          <h3>ON / OFF</h3 id="hide">
+          <label class="switch" onclick="startStop()" >
+            <input type="checkbox" >
+            <span class="slider round"  onclick="settimer();hideb()" id="tog-btn"></span>
+          </label>
+      </div>
+      <div class="line" id="open" style="display:none">
+          <h3>PAUSE/ RESUME</h3>
+          <label class="switch" onclick="pauseResume()">
+              <input type="checkbox">
+              <span class="slider round" onclick="settimer();hidebtn()" id="tog-btn"></span>
+          </label>
+      </div>
+      <div id="display">
+        00:00:00
+      </div>
+      <div class="buttons" hidden>
+        <button id="startStop" onclick="startStop()">Start</button> <button id="reset" onclick="reset()">Reset</button>
+      </div>
+    </div>
+    <script src="newsidebar.js"></script>
+  <!--side-bar ends here-->
+  </body>
+</html>

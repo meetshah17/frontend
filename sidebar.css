@@ -1,0 +1,123 @@
+*{ 
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* for backgrond sky-blue color*/
+body{
+    background-color: rgb(166, 199, 241);
+}
+.projectlist{
+    text-align: center;
+    margin-top: 5px;
+}
+/* it closes sidebar*/
+#sidebar{
+    position: relative;
+    width:250px;
+    height:678px;
+    margin-top: 2px;
+    background-color: rgb(31, 41, 46);
+    transition: all 300ms ease-in-out;
+}
+/*for AV DEVS logo*/
+.logo img{
+    margin-left: 20px;
+    padding-top: 5px;
+    height: 65px;
+}
+/* get image in sidebar*/
+.profile img{
+    padding: 10px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 80%;
+    margin: 0 auto;
+}
+h3{
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+h2{
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* for text in the sidebar*/
+#sidebar li{
+    position: relative;
+    font-size: 30px;
+    color: rgb(223, 226, 43);
+    padding: 30px;
+    border-bottom: 1px solid rgb(241, 233, 233);
+    text-align: justify;
+    text-justify: auto;
+    padding: 40px;
+}
+/* for toggle button place*/
+.toggle-btn{
+    position: absolute;
+    left: 105%;
+    top: 15px;
+}
+/* this class is for toggle button design*/
+.toggle-btn span{ 
+    display: block;
+    background-color: black;
+    width: 30px;
+    height: 5px;
+    margin: 3px;
+}
+
+/* to activate sidebar button*/
+#sidebar.active{
+    left: -250px;
+    transition: all 10s ease-in-out;
+}
+.slider.round {
+    border-radius: 34px;
+  }
+  
+.slider.round:before {
+    border-radius: 50%;
+  }
+
+/* on-off button*/
+.tog-btn{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 80px;
+    margin-left: 82px;
+}
+/* for inner toggle button*/
+.tog-btn > .inner-circle{
+    width: 40px;
+    height: 40px;
+    background: rgb(248, 245, 245);
+    border-radius:50%;
+    transition: 1s ease;
+
+}
+/* to activate toggle button*/
+.tog-btn.active{
+    background:rgb(26, 231, 37);
+}
+/* when it's on it moves right side*/
+.tog-btn.active>.inner-circle{
+    margin-left: 40px;
+}
+/*  to draw line between two toggle button*/
+.line{
+    border-bottom: 1px solid white;
+}
+
+
+

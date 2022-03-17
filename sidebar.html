@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="sidebar.css">
+    
+    <script type="text/javascript">
+        // function list()
+        // {
+        //   document.getElementById('project').classList.add({"Roadhow": 23, "AV devs": 2 , "Street AI": 20 , "Object detection":15 , "Face recognization":52})
+        // }
+      // For sidebar 
+        function togglemenu()
+        {
+          document.getElementById('sidebar').classList.toggle('active');
+        }
+      // for first toggle button
+        function tog()
+        {
+          document.getElementById('tog1-btn').classList.toggle('active');
+        }
+      //for second toggle button
+        function res()
+        {
+          document.getElementById('tog2-btn').classList.toggle('active');
+        }
+    </script>
+  
+  </head>
+  <body>
+    <div class="projectlist">
+      <select name="project" id="project">
+          <option value="1" onclick="list()">Roadhow</option>
+          <option value="2" onclick="list()">AVdevs</option>
+          <option value="3" onclick="list()">Street_AI</option>
+          <option value="4" onclick="list()">Object_detection</option>
+          <option value="5" onclick="list()">Face_recognization</option>
+      </select>
+    </div>
+    <div class="container">
+      <!--cards code is in js file-->
+    </div>
+    <div class="logo">
+      <img src="i2.jpg" alt="">
+    </div>   
+    <!--<h1>AV DEVS</h1>-->
+    <div id="sidebar"> 
+      <!--for toggle-btn-->
+      <div class="toggle-btn" onclick="togglemenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--Profile Image-->
+      <div class="profile">
+        <img src="img_avatar.jpg" alt="">
+        <h3>AV DEVS employee</h3>
+        <h2>Employee name:</h2>
+        <h2>Employee ID:</h2>
+      </div>
+      <!--menu item-->
+      <div>
+        <ul>
+          <li><a href="#"><span>Home</span></a></li>
+          <li><a href="#"><span>Dashboard</span></a></li>
+        </ul>
+      </div>
+      <!--For ON/OFF button-->
+      <div class="line">
+        <h3>ON/OFF</h3>
+        <div class="tog-btn" id="tog1-btn" onclick="tog()">
+        <div class="inner-circle"></div>
+        </div><br><br>
+      </div> 
+      <!--For PAUSE/RESUME BUTTON-->
+        <h3>PAUSE/RESUME</h3>
+        <div class="tog-btn" id="tog2-btn" onclick="res()">
+        <div class="inner-circle"></div>
+        </div>
+    </div>
+    <script src="cards.js"></script>
+</body>
+</html>
